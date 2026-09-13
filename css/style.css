@@ -2112,6 +2112,7 @@ line-height: 1.8;
     z-index: 0;
     background-position: center;
     background-size: cover;
+    background-image: var(--card-image, url("../images/network.svg"));
     filter: saturate(0.82);
 }
 
@@ -2149,76 +2150,6 @@ line-height: 1.8;
     margin-top: 0;
     margin-bottom: 18px;
     color: #d9b85d;
-}
-
-.service-card:nth-child(4n + 1)::before,
-.mission-card:nth-child(4n + 1)::before,
-.why-card:nth-child(4n + 1)::before,
-.about-value-card:nth-child(4n + 1)::before {
-    background-image: url("../images/image1.png");
-}
-
-.service-card:nth-child(4n + 2)::before,
-.mission-card:nth-child(4n + 2)::before,
-.why-card:nth-child(4n + 2)::before,
-.about-value-card:nth-child(4n + 2)::before {
-    background-image: url("../images/image2.png");
-}
-
-.service-card:nth-child(4n + 3)::before,
-.mission-card:nth-child(4n + 3)::before,
-.why-card:nth-child(4n + 3)::before,
-.about-value-card:nth-child(4n + 3)::before {
-    background-image: url("../images/image3.png");
-}
-
-.service-card:nth-child(4n)::before,
-.mission-card:nth-child(4n)::before,
-.why-card:nth-child(4n)::before,
-.about-value-card:nth-child(4n)::before {
-    background-image: url("../images/image4.png");
-}
-
-.service-card:nth-child(5n)::before,
-.mission-card:nth-child(5n)::before,
-.why-card:nth-child(5n)::before,
-.about-value-card:nth-child(5n)::before {
-    background-image: url("../images/network.svg");
-}
-
-.service-card:nth-child(6n)::before,
-.mission-card:nth-child(6n)::before,
-.why-card:nth-child(6n)::before,
-.about-value-card:nth-child(6n)::before {
-    background-image: url("../images/savings.svg");
-}
-
-.service-card:nth-child(7n)::before,
-.mission-card:nth-child(7n)::before,
-.why-card:nth-child(7n)::before,
-.about-value-card:nth-child(7n)::before {
-    background-image: url("../images/skills.svg");
-}
-
-.service-card:nth-child(8n)::before,
-.mission-card:nth-child(8n)::before,
-.why-card:nth-child(8n)::before,
-.about-value-card:nth-child(8n)::before {
-    background-image: url("../images/growth.svg");
-}
-
-.service-card:nth-child(9n)::before,
-.mission-card:nth-child(9n)::before,
-.why-card:nth-child(9n)::before,
-.about-value-card:nth-child(9n)::before {
-    background-image: url("../images/community.svg");
-}
-
-.service-card:nth-child(10n)::before,
-.mission-card:nth-child(10n)::before,
-.why-card:nth-child(10n)::before,
-.about-value-card:nth-child(10n)::before {
-    background-image: url("../images/agriculture.svg");
 }
 
 .mission-card {
@@ -2273,16 +2204,72 @@ line-height: 1.8;
 }
 
 .project-agriculture {
-    background-image: url("../images/agriculture.svg");
+    background-image: var(--project-image), url("../images/agriculture.svg");
 }
 
 .project-business {
-    background-image: url("../images/growth.svg");
+    background-image: var(--project-image), url("../images/growth.svg");
 }
 
 .project-partnership {
-    background-image: url("../images/network.svg");
+    background-image: var(--project-image), url("../images/network.svg");
 }
+
+.page-about .about-value-card:nth-child(1)::before { background-image: url("../images/25.png"); }
+.page-about .about-value-card:nth-child(2)::before { background-image: url("../images/26.png"); }
+.page-about .about-value-card:nth-child(3)::before { background-image: url("../images/27.png"); }
+.page-about .about-value-card:nth-child(4)::before { background-image: url("../images/agriculture.svg"); }
+
+.page-business-club .service-card:nth-child(1)::before { background-image: url("../images/network.svg"); }
+.page-business-club .service-card:nth-child(2)::before { background-image: url("../images/savings.svg"); }
+.page-business-club .service-card:nth-child(3)::before { background-image: url("../images/skills.svg"); }
+.page-business-club .service-card:nth-child(4)::before { background-image: url("../images/growth.svg"); }
+.page-business-club .service-card:nth-child(5)::before { background-image: url("../images/community.svg"); }
+.page-business-club .service-card:nth-child(6)::before { background-image: url("../images/agriculture.svg"); }
+
+.page-investment .service-card:nth-child(1)::before { background-image: url("../images/image1.png"); }
+.page-investment .service-card:nth-child(2)::before { background-image: url("../images/image2.png"); }
+.page-investment .service-card:nth-child(3)::before { background-image: url("../images/image3.png"); }
+.page-investment .service-card:nth-child(4)::before { background-image: url("../images/image4.png"); }
+.page-investment .service-card:nth-child(5)::before { background-image: url("../images/image5.png"); }
+.page-investment .service-card:nth-child(6)::before { background-image: url("../images/image6.png"); }
+.page-investment .service-card:nth-child(7)::before { background-image: url("../images/image7.png"); }
+.page-investment .service-card:nth-child(8)::before { background-image: url("../images/image8.png"); }
+
+.page-membership .service-card:nth-child(1)::before { background-image: url("../images/image9.png"); }
+.page-membership .service-card:nth-child(2)::before { background-image: url("../images/image10.png"); }
+.page-membership .why-card:nth-child(1)::before { background-image: url("../images/network.svg"); }
+.page-membership .why-card:nth-child(2)::before { background-image: url("../images/savings.svg"); }
+.page-membership .why-card:nth-child(3)::before { background-image: url("../images/skills.svg"); }
+.page-membership .why-card:nth-child(4)::before { background-image: url("../images/growth.svg"); }
+
+.page-news .service-card:nth-child(1)::before { background-image: url("../images/11.png"); }
+.page-news .service-card:nth-child(2)::before { background-image: url("../images/12.png"); }
+.page-news .service-card:nth-child(3)::before { background-image: url("../images/13.png"); }
+.page-news .service-card:nth-child(4)::before { background-image: url("../images/14.png"); }
+.page-news .service-card:nth-child(5)::before { background-image: url("../images/15.png"); }
+.page-news .service-card:nth-child(6)::before { background-image: url("../images/16.png"); }
+
+.page-projects .service-card:nth-child(1)::before { background-image: url("../images/17.png"); }
+.page-projects .service-card:nth-child(2)::before { background-image: url("../images/18.png"); }
+.page-projects .service-card:nth-child(3)::before { background-image: url("../images/19.png"); }
+.page-projects .service-card:nth-child(4)::before { background-image: url("../images/20.png"); }
+.page-projects .service-card:nth-child(5)::before { background-image: url("../images/21.png"); }
+.page-projects .service-card:nth-child(6)::before { background-image: url("../images/22.png"); }
+
+.page-services .service-card:nth-child(1)::before { background-image: url("../images/23.png"); }
+.page-services .service-card:nth-child(2)::before { background-image: url("../images/24.png"); }
+.page-services .service-card:nth-child(3)::before { background-image: url("../images/25.png"); }
+.page-services .service-card:nth-child(4)::before { background-image: url("../images/26.png"); }
+.page-services .service-card:nth-child(5)::before { background-image: url("../images/27.png"); }
+.page-services .service-card:nth-child(6)::before { background-image: url("../images/agriculture.svg"); }
+
+.page-vision .service-card:nth-child(1)::before { background-image: url("../images/image1.png"); }
+.page-vision .service-card:nth-child(2)::before { background-image: url("../images/image2.png"); }
+.page-vision .service-card:nth-child(3)::before { background-image: url("../images/image3.png"); }
+.page-vision .service-card:nth-child(4)::before { background-image: url("../images/image4.png"); }
+.page-vision .service-card:nth-child(5)::before { background-image: url("../images/image5.png"); }
+.page-vision .service-card:nth-child(6)::before { background-image: url("../images/image6.png"); }
 
 @media (max-width: 600px) {
     .service-card,
